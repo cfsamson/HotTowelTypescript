@@ -25,8 +25,9 @@ module App.Directives
         static directiveId: string = 'ccSidebar';
         restrict: string = "A";
 
-        constructor()
+        constructor(private $window)
         {
+
         }
 
         link = (scope: ICcSidebarScope, element, attrs) =>
@@ -54,10 +55,21 @@ module App.Directives
             function hideAllSidebars() {
                 $sidebarInner.slideUp(350);
                 $('.sidebar-dropdown a').removeClass(dropClass);
-            }   
+            }
+
+            // renders menuitems in sidebar going from small screen to large screen
+            declare var angular:any;
+            angular.element(this.$window).on('resize', () => {
+                if (this.$window.innerWidth >= 765) {
+                    $sidebarInner.slideDown(350);
+                }
+                else {
+                    $sidebarInner.slideUp(350);
+                }
+            });
         }
     }
 
 //References angular app
-    app.directive(CcSidebar.directiveId, [() => new CcSidebar()]);
+    app.directive(CcSidebar.directiveId, ['$window',($window) => new CcSidebar($window)]);
 } 

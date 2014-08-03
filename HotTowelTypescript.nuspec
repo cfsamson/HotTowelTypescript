@@ -6,7 +6,7 @@
     <authors>CSam</authors>
     <owners>Csam</owners>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <projectUrl>https://nuget.org/packages/hottoweltypescript</projectUrl>
+    <projectUrl>https://github.com/cfsamson/HotTowelTypescript</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   
