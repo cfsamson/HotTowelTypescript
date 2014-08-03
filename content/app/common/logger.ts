@@ -35,7 +35,7 @@ module App.Shared{
         {
             logFunctionName = logFunctionName || 'log';
             switch (logFunctionName.toLowerCase()) { // convert aliases
-                case 'logFunctionName':
+                case 'success':
                     logFunctionName = 'logSuccess'; break;
                 case 'error':
                     logFunctionName = 'logError'; break;
