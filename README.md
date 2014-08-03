@@ -1,7 +1,7 @@
 HotTowelTypescript
 ==================
 
-HotTowel Typescript is a SPA template. This is an update to John Papas HotTowel updated and written in Typescript. Some minor ui-bugs are fixed and there are some changes to the project structure, mainly naming of controllers and directives. Using Web Essentials plugin for Visual Studio is highly recommended when using Typescript. You need to generate the .js files from TypeScript files before you run the project.
+HotTowel Typescript is a SPA template. This is an update to John Papas HotTowel-Angular updated and written in Typescript. Some minor ui-bugs are fixed and there are some changes to the project structure, mainly naming of controllers and directives. Using Web Essentials plugin for Visual Studio is highly recommended when using Typescript. You need to generate the .js files from TypeScript files before you run the project.
 
 This is the nuget-package HotTowelTypescript
 
