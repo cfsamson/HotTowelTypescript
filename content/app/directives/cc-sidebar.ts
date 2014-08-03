@@ -16,9 +16,10 @@ module App.Directives
     }
 
     interface ICcSidebarScope extends ng.IScope
-    {
-      
-    }
+    {}
+
+    //need to declare angular since this is a non TypeScript global variable
+    declare var angular:any;
 
     class CcSidebar implements ICcSidebar
     {
@@ -58,7 +59,6 @@ module App.Directives
             }
 
             // renders menuitems in sidebar going from small screen to large screen
-            declare var angular:any;
             angular.element(this.$window).on('resize', () => {
                 if (this.$window.innerWidth >= 765) {
                     $sidebarInner.slideDown(350);
