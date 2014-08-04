@@ -30,7 +30,7 @@ Since this is a nuget package, this project will not run in visual studio since 
 
 You will find all the files in the Content folder.
 
-Best way to contribute is to clone the project, make your changes and then do a pull request. 
+Best way to contribute is to fork the project, make your changes and then do a pull request. 
 
 If you want to test your changes or run the project with the latest changes from the repo then: 
 
