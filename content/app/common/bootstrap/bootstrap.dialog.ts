@@ -27,7 +27,7 @@ module App.Shared
 
     class BootstrapDialog implements IBootstrapDialog
     {
-        public static serviceId: string = 'common.bootstrap';
+        public static serviceId: string = 'bootstrap.dialog';
 
         private $modal: any;
         private $templateCache: ng.ITemplateCacheService;
@@ -104,7 +104,7 @@ module App.Shared
             $scope.cancel = () => { $modalInstance.dismiss('cancel'); };
         }
     }
-
-    //Register with angular
-    var bootstrapModule = angular.module(BootstrapDialog.serviceId, ['ui.bootstrap']);
+  
+    // Register bootstrap.dialog service
+    commonBootstrapModule.factory(BootstrapDialog.serviceId, ['$modal', '$templateCache', (m, tc) => new BootstrapDialog(m, tc)])
 }
