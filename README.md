@@ -13,6 +13,11 @@ Besides Web Essentials plugin for compiling the Typescript files you will need t
 
 - When clicking on a menuitem in a small screen the menu now closes
 
+<h3>Version 2.2.2:</h3>
+* Fixed issue with bootstrap.dialog not opening as it should
+
+* Breeze.Server.WebApi2 1.4.16 was causing dependency issue and preventing install in VS2013.4 so updated this to 1.5.3
+
 <h3>Version 2.1:</h3>
 * Removed .js files, use Web Essentials VS plugin to recreate them
 
