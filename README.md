@@ -5,6 +5,8 @@ HotTowel Typescript is a SPA template. This is an update to John Papas HotTowel-
 
 This is the nuget-package HotTowelTypescript
 
+Besides Web Essentials plugin for compiling the Typescript files you will need the Typescript plugin for visual studio too be able to build the project.
+
 <h2>UI fixes:</h2>
 
 - When going from small screen to large screen after selecting a menuitem the sidebar contained no menuitems
