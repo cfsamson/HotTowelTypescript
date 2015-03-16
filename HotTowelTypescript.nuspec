@@ -34,7 +34,7 @@ Version 2:
   </description>
     <dependencies>
       <dependency id="Breeze.Angular" version="0.8.7"/>
-      <dependency id="Breeze.Server.WebApi2" version="1.4.16"  />
+      <dependency id="Breeze.Server.WebApi2" version="1.5.3"  />
        <!--+ <dependency id="System.Spatial" version="5.6.1"  /> +-->
  
   <dependency id="AngularJS.Animate" version="1.2.19"  />
