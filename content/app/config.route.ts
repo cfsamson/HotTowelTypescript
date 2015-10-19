@@ -2,10 +2,19 @@
 'use strict';
 module App
 {
-    export interface IAppRoute
-    {
+    export interface IAppRouteSettings {
+        nav: number;
+        content: string;
+    }
+
+    export interface IAppRouteConfig extends ng.route.IRoute {
+        title: string;
+        settings: IAppRouteSettings;
+    }
+
+    export interface IAppRoute {
         url: string;
-        config: ng.route.IRoute;
+        config: IAppRouteConfig;
     }
 
 
